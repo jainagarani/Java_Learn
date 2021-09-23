@@ -1,6 +1,10 @@
 package programs;
 
 import java.util.Arrays;
+/*
+Move zero to right
+ */
+
 
 public class MoveZeroToRight {
 
