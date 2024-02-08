@@ -33,6 +33,7 @@ public class QuickSort {
 
             }
             quickSort1(arr, begin, pivot - 1);
+
             quickSort1(arr, pivot + 1, end);
 
         }

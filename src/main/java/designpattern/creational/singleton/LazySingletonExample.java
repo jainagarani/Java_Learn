@@ -10,7 +10,7 @@ public class LazySingletonExample implements Serializable {
 
     }
 
-    public LazySingletonExample getInstance(){
+    public static LazySingletonExample getInstance(){
         if(null == lazySingletonExample ){
             synchronized (LazySingletonExample.class){
                 if(null == lazySingletonExample) {

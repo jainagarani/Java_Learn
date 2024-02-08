@@ -11,12 +11,11 @@ import java.util.stream.Stream;
 public class LRUHashMap {
 
     static  final int MAX_SIZE =2;
-  /*  HashMap<String,String> map =
+    /*HashMap<String,String> map =
      Stream.of(new AbstractMap.SimpleEntry<>("JAI","Jai"),
             new AbstractMap.SimpleEntry<>("Naga","Naga")).
-             collect(Collectors.toMap(Map.Entry::getKey,))
-*/
-          ConcurrentLinkedQueue<String> queue = new ConcurrentLinkedQueue();
+             collect(Collectors.toMap(Map.Entry::getKey,));*/
+
 
 
 }

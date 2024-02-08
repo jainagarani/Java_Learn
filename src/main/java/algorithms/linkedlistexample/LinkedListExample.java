@@ -85,7 +85,7 @@ public class LinkedListExample {
         linkedListExample.append(7);
         linkedListExample.append(8);
         linkedListExample.printList(linkedListExample.head);
-        linkedListExample.deleteWithValue(7);
+       // linkedListExample.deleteWithValue(7);
         linkedListExample.printList(linkedListExample.head);
         linkedListExample.head = linkedListExample.reverse(linkedListExample.head);
         System.out.println("after reverse");

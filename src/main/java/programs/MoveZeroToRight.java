@@ -1,6 +1,7 @@
 package programs;
 
 import java.util.Arrays;
+import java.util.Stack;
 /*
 Move zero to right
  */
@@ -23,7 +24,9 @@ public class MoveZeroToRight {
             arr[count] = 0;
             count = count+1;
         }
-        Arrays.stream(arr).forEach(System.out::println);
+        Arrays.stream(arr).forEach(System.out::print);
+
+
 
 
 

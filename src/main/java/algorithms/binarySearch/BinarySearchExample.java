@@ -2,7 +2,7 @@ package algorithms.binarySearch;
 
 public class BinarySearchExample {
     Node root;
-    static int max_level =0;
+     int max_level =0;
 
     public void insert(int data){
         root = insert(root,data);
@@ -37,11 +37,25 @@ public class BinarySearchExample {
         rightViewUtil(root.left,current_level+1);
     }
 
+    public void rightViewUtil1(Node root, int current_level){
+        if(null == root){
+            return;
+        }
+        if(max_level < current_level){
+            System.out.println(root.data);
+            max_level = current_level;
+        }
+
+        rightViewUtil1(root.right, current_level+1);
+        rightViewUtil1(root.left, current_level+1);
+
+    }
+
 
 
     public void printRightView(Node root){
         System.out.println("\n");
-        rightViewUtil(root,1);
+        rightViewUtil1(root,1);
 
     }
 

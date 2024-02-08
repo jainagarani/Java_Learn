@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+ReportController -> ReportService: Call to get the report based on user param(hourly, daily, monthly)
+ReportService -> DB: Connect to the view based on user param and create response
+
+ReportService --> ReportController: sends the json response
+
+@enduml

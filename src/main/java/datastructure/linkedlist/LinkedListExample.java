@@ -85,8 +85,8 @@ public class LinkedListExample {
         linkedListExample.insert(2);
         linkedListExample.insert(1);
         linkedListExample.printLinkedList();
-       // linkedListExample.node = linkedListExample.reverseNodeInLine(linkedListExample.node);
-        linkedListExample.printInReverseOrder(linkedListExample.node);
+        linkedListExample.node = linkedListExample.reverseNodeInLine(linkedListExample.node);
+       // linkedListExample.printInReverseOrder(linkedListExample.node);
         System.out.println("after reverse");
        // linkedListExample.printLinkedList();
         linkedListExample.deleteWithValue(1);

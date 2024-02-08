@@ -9,6 +9,7 @@ import java.util.stream.Stream;
 
 public class InitalizationExampleMap {
 
+
     public static Map<String, String> nameMap;
     public static Map<String, String> nameMap1 = getSingletonMap();
     public static Map<String, String> getSingletonMap(){
