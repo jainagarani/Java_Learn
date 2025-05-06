@@ -1,5 +1,8 @@
 package designpappern.behavioural.observerPattern;
 
+/*
+Demo class for ObserverPattern
+ */
 public class ObserverPatternDemo {
 
     public static void main(String[] args){
