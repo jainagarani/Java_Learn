@@ -26,14 +26,29 @@ public class MoveZeroToRight {
         }
         Arrays.stream(arr).forEach(System.out::print);
 
+    }
 
+    public  void moveZerosToRight(int[] arr){
+        int count=0;
+        for(int i =0; i<arr.length; i++ ){
+            if(arr[i] != 0){
+                arr[count] = arr[i];
+                count++;
+            }
+        }
 
+        while(count < arr.length){
+            arr[count] = 0;
+            count++;
+        }
 
+        Arrays.stream(arr).forEach(System.out::print);
 
     }
     public static void main(String[] args){
         int[] arr = {1,0,3,5,6,9,0};
-       new MoveZeroToRight().moveArrayToRight(arr);
+       //new MoveZeroToRight().moveArrayToRight(arr);
+        new MoveZeroToRight().moveZerosToRight(arr);
 
     }
 }

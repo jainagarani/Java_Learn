@@ -23,6 +23,7 @@ public class MapExample {
         double salary = employeeMap.values().stream().mapToDouble(e -> e.getSalary()).sum();
 
 
+
         System.out.println("salary is "+salary);
         employeeMap.forEach((k, v)-> System.out.println("key is "+ k +" value is "+v.getSalary()));
 

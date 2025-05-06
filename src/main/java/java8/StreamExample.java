@@ -38,9 +38,9 @@ public class StreamExample {
        // generated.forEach(e-> System.out.println(e));
 
         Stream<Integer> iterated = Stream.iterate(5, n->n+1).limit(4);
-         //iterated.forEach(e-> System.out.println(e));
+         iterated.forEach(e-> System.out.println(e));
 
-        IntStream intStream = IntStream.rangeClosed(1,4);
+        IntStream intStream = IntStream.rangeClosed(1,4).limit(4);
         //intStream.forEach(System.out::println);
 
         Random random = new Random();
@@ -77,15 +77,7 @@ public class StreamExample {
             return a + b;
         });
 
-
         System.out.println("sum is"+sum);
-
-
-
-
-
-
-
 
     }
 }

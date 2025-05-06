@@ -15,6 +15,7 @@ public class PersonExample {
                 new Person("Asha", "AR", 16),
                 new Person("Aradhana", "aani", 16)
         );
+
         personList.stream().forEach(p -> System.out.println(p.toString()));
         System.out.println("In filter ");
        personList.stream().filter(p -> p.getFirstName().startsWith("A")).forEach(p -> System.out.println(p.toString()));
